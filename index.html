@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="conv.css">
+
+</head>
+<body>
+            <div class = cont>
+            <h2>Codificador e Decodificador de <br>Cifra de Cesar e Base64</h2><br>
+            <div class = caixa>
+            <p>Digite aqui sua mensagem</p>
+            <input type="text" id="msg">
+            <select id="cript">
+                <option value="selecione" disabled selected>Selecione a criptografia desejada</option>
+                <option value="cifradecesar">Cifra de César</option>
+                <option value="base64">Base 64</option>
+            </select>
+            </div>  
+            <div class = resto>
+            <label for ="">Escolha uma opção:</label>
+            <input type="radio" name="codificacao" id="codific">
+            <label for= "codificar">Codificar</label>
+            <input type="radio" name="codificacao" id="decodific">
+            <label for="decodificar">Decodificar</label>
+            <br>
+            <br>
+            <p>Contador:</p>
+            
+            <input type="number" id="numero">
+            <button id="enviar" onclick="cod()">Enviar</button>
+            <div id="resultado">Seu resultado aqui!</div><br><br>
+            <script src = "conv.js"></script>
+          </div>
+          </div>
+ </body>
+</html>
